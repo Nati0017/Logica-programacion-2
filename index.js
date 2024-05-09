@@ -11,8 +11,8 @@ function convertirTemperatura() {
     
     let kelvin = celsius + 273.15;
     
-    console.log(celsius + " grados Celsius son " + fahrenheit.toFixed() + " grados Fahrenheit.");
-    console.log(celsius + " grados Celsius son " + kelvin.toFixed() + " grados Kelvin.");
+    console.log(celsius + " grados Celsius son " + fahrenheit.toFixed(2) + " grados Fahrenheit.");
+    console.log(celsius + " grados Celsius son " + kelvin.toFixed(2) + " grados Kelvin.");
 }
 
 convertirTemperatura();
