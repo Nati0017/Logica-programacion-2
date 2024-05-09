@@ -1,22 +1,18 @@
 function convertirTemperatura() {
-    var celsius;
+    let celsius;
     do {
-        celsius = prompt("Por favor, ingresa la temperatura en grados Celsius:");
-        celsius = parseFloat(celsius); // Convertir la entrada a número
+        celsius = parseFloat(prompt("Por favor, ingresa la temperatura en grados Celsius:"));
         if (isNaN(celsius)) {
             console.error("Error: Debes ingresar un número válido.");
         }
     } while (isNaN(celsius));
 
-    // Convertir a grados Fahrenheit
-    var fahrenheit = celsius * 9/5 + 32;
+    let fahrenheit = celsius * 9/5 + 32;
     
-    // Convertir a Kelvin
-    var kelvin = celsius + 273.15;
+    let kelvin = celsius + 273.15;
     
-    // Mostrar resultados
-    console.log(celsius + " grados Celsius son " + fahrenheit.toFixed(2) + " grados Fahrenheit.");
-    console.log(celsius + " grados Celsius son " + kelvin.toFixed(2) + " grados Kelvin.");
+    console.log(celsius + " grados Celsius son " + fahrenheit.toFixed() + " grados Fahrenheit.");
+    console.log(celsius + " grados Celsius son " + kelvin.toFixed() + " grados Kelvin.");
 }
 
 convertirTemperatura();
